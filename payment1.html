@@ -1,0 +1,36 @@
+﻿<html>
+	<body>
+
+<script>
+function a()
+{
+alert("Tras Done");
+}
+</script>	
+<%
+String str=request.getParameter("n");
+out.println(str);
+%>
+<table>
+<tr>
+<td>Bank Name</td>
+<td><select ><option>Select</option>
+<option>SBI</option>
+<option>ICICI</option>
+</td>
+</tr>
+
+<tr>
+<td>Card No</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td>Payment Amount</td>
+<td><input type="text"></td>
+</tr>
+<tr>
+<td><input type="submit" onclick="a()"></td>
+<td><input type="reset"></td>
+</tr>
+
+</table>
